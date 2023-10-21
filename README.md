@@ -2,16 +2,7 @@ Sorting algorithms are fundamental in computer science, and they serve to arrang
 
 1. Bubble Sort:
 Description: Repeatedly steps through the list, compares adjacent items, and swaps them if they are in the wrong order. The process is repeated until no more swaps are needed.
-Complexity: Average and worst-case time complexity is 
-�
-(
-�
-2
-)
-O(n 
-2
- ), where 
-�
+Complexity: Average and worst-case time complexity 
 n is the number of items being sorted.
 2. Selection Sort:
 Description: Divides the input list into two parts: a sorted and an unsorted region. It repeatedly selects the smallest (or largest, depending on sorting order) element from the unsorted subarray and moves it to the end of the sorted subarray.
