@@ -1,35 +1,33 @@
 #include "sort.h"
 /**
  * insertion_sort_list - insertion sorting
- * @list: list
+ * @list: The list to be sorted by insertion method
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *curr, *next_node, *prev_node;
+	listint_t *current, *next_node, *prev_node;
 
 	if (!list || !(*list) || !(*list)->next)
 		return;
-
-	curr = (*list)->next;
-	while (curr)
+	current = (*list)->next;
+	while (current)
 	{
-		prev_node = curr->prev;
-		prev_node->next = curr->next;
-		while (curr->prev && curr->n < curr->prev->n)
+		next_node = current->next;
+		while (current->prev && current->n < current->prev->n)
 		{
-			prev_node = curr->prev;
-			prev_node->next = curr->next;
-			if (curr->next)
-				curr->next->prev = prev_node;
-			curr->next = prev_node;
-			curr->prev = prev_node->prev;
+			prev_node = current->prev;
+			prev_node->next = current->next;
+			if (current->next)
+				current->next->prev = prev_node;
+			current->next = prev_node;
+			current->prev = prev_node->prev;
 			if (prev_node->prev)
-				prev_node->prev->next = curr;
+				prev_node->prev->next = current;
 			else
-				*list = curr;
-			prev_node->prev = curr;
+				*list = current;
+			prev_node->prev = current;
 			print_list(*list);
 		}
-		curr = next_node;
+		current = next_node;
 	}
 }
