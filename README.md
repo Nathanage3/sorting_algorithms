@@ -20,29 +20,12 @@ n is the number of items.
 3. Insertion Sort:
 Description: Builds a sorted array (or list) one item at a time by repeatedly taking one element from the input data and inserting it in the correct position in the already sorted list.
 Complexity: Best-case time complexity is 
-�
-(
-�
-)
 O(n) (when the list is already sorted), but average and worst-case time complexity is 
-�
-(
-�
-2
-)
-O(n 
-2
- ).
+O(n^2).
 4. Merge Sort:
 Description: A divide-and-conquer algorithm that divides the list into halves, sorts the halves, and then merges them.
 Complexity: Always takes 
-�
-(
-�
-log
-⁡
-�
-)
+
 O(nlogn) time, where 
 �
 n is the number of items.
