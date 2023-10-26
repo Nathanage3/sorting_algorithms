@@ -7,15 +7,7 @@ n is the number of items being sorted.
 2. Selection Sort:
 Description: Divides the input list into two parts: a sorted and an unsorted region. It repeatedly selects the smallest (or largest, depending on sorting order) element from the unsorted subarray and moves it to the end of the sorted subarray.
 Complexity: Always takes 
-�
-(
-�
-2
-)
-O(n 
-2
- ) time, where 
-�
+
 n is the number of items.
 3. Insertion Sort:
 Description: Builds a sorted array (or list) one item at a time by repeatedly taking one element from the input data and inserting it in the correct position in the already sorted list.
